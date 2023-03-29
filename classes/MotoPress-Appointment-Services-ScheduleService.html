@@ -166,7 +166,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/MotoPress-Appointment-Services-ScheduleService.html#property_workingHours">$workingHours</a>
     <span>
-                &nbsp;: mixed            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Timetable with filtered locations (only allowed locations) and activity
 (only working hours).</dd>
@@ -195,7 +195,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/MotoPress-Appointment-Services-ScheduleService.html#method_buildWorkingHoursBySchedule">buildWorkingHoursBySchedule()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -370,7 +370,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$workingHours</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -612,7 +612,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">buildWorkingHoursBySchedule</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/MotoPress-Appointment-Entities-Schedule.html"><abbr title="\MotoPress\Appointment\Entities\Schedule">Schedule</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schedule</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$locationId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">buildWorkingHoursBySchedule</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/MotoPress-Appointment-Entities-Schedule.html"><abbr title="\MotoPress\Appointment\Entities\Schedule">Schedule</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schedule</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$locationId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -656,9 +656,10 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>[Day (0-6) =&gt; TimePeriods] - only working hours.</p>
+</section>
 
     
 </article>
@@ -1107,7 +1108,7 @@ ScheduleService for each allowed location.</p>
     <script>
         cssVars({});
     </script>
-    <script src="js/search.js?updated=1680096340"></script>
-    <script src="js/searchIndex.js?updated=1680096340"></script>
+    <script src="js/search.js?updated=1680097266"></script>
+    <script src="js/searchIndex.js?updated=1680097266"></script>
 </body>
 </html>
